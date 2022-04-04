@@ -16,16 +16,16 @@ public class WeaponController : MonoBehaviour {
 
     private void Start() {
         // Instantiate(bulletPrefab, _firePoint.transform.position, Quaternion.identity);
-        Invoke("Shoot", 1f);
+        /*Invoke("Shoot", 1f);
         Invoke("Shoot", 2f);
-        Invoke("Shoot", 3f);
+        Invoke("Shoot", 3f);*/
     }
 
     private void Update() {
         
     }
 
-    void Shoot() {
+    public void Shoot() {
         if (bulletPrefab != null && _firePoint != null && shooter != null) {
             GameObject myBullet = Instantiate(bulletPrefab, _firePoint.transform.position, Quaternion.identity) as GameObject;
 
