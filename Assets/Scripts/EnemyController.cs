@@ -83,7 +83,7 @@ public class EnemyController : MonoBehaviour {
         StartCoroutine("PatrolTarget");
     }
 
-    void CanShoot() {
+    void CanShootOld() {
         if (_weapon != null) {            
             _weapon.Shoot();
         }

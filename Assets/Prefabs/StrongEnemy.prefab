@@ -1,53 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2958632514534531570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5047007650302251575}
-  - component: {fileID: 7983266533100446023}
-  m_Layer: 8
-  m_Name: HurtBox
-  m_TagString: Enemy
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5047007650302251575
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2958632514534531570}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6353869857872143721}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &7983266533100446023
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2958632514534531570}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.17, y: 0.28}
-  m_Direction: 0
 --- !u!1 &3188721112773567974
 GameObject:
   m_ObjectHideFlags: 0
@@ -106,6 +58,54 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 0.16}
   m_EdgeRadius: 0
+--- !u!1 &3432026177149773350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 199292202995176517}
+  - component: {fileID: 4684338320629590386}
+  m_Layer: 8
+  m_Name: HurtBox
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &199292202995176517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432026177149773350}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6353869857872143721}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &4684338320629590386
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432026177149773350}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.17, y: 0.28}
+  m_Direction: 0
 --- !u!1 &6353869857872143724
 GameObject:
   m_ObjectHideFlags: 0
@@ -117,15 +117,14 @@ GameObject:
   - component: {fileID: 6353869857872143721}
   - component: {fileID: 6353869857872143722}
   - component: {fileID: 1661546058}
-  - component: {fileID: 6353869857872143723}
   - component: {fileID: 2838864429519453526}
   - component: {fileID: 5529394670995676368}
-  - component: {fileID: -2937484261167828834}
+  - component: {fileID: -1449310949506847402}
   - component: {fileID: 1961999804330216237}
   - component: {fileID: 523067753829055157}
-  - component: {fileID: -188033488211938904}
+  - component: {fileID: -2311320072300120672}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: StrongEnemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +145,7 @@ Transform:
   - {fileID: 7096132512640562203}
   - {fileID: 2639913432599991537}
   - {fileID: 7444449047643468557}
-  - {fileID: 5047007650302251575}
+  - {fileID: 199292202995176517}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -192,7 +191,7 @@ SpriteRenderer:
   m_SortingLayer: 1
   m_SortingOrder: 1
   m_Sprite: {fileID: -2028187206, guid: 3b67fc0ec821fea44914aefd224c5e25, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.10849059, b: 0.10849059, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -222,22 +221,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &6353869857872143723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6353869857872143724}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4418f232882b2424abb32be986c64de3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1.5
-  minX: -2.4
-  maxX: 2.4
-  waitingTime: 2
 --- !u!114 &2838864429519453526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -250,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a998307ac3da42845bbb435e64eabafb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1.5
+  speed: 2
   minX: 0.25
   wallAware: 0.5
   groundLayer:
@@ -274,7 +257,7 @@ MonoBehaviour:
   prefab: {fileID: 3425788136954369675, guid: ba6ba8fbdec2c5c48b2a0937f488d186, type: 3}
   point: {fileID: 2639913432599991537}
   livingTime: 1
---- !u!114 &-2937484261167828834
+--- !u!114 &-1449310949506847402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -323,7 +306,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.07866953}
   serializedVersion: 2
   m_Radius: 0.06103027
---- !u!82 &-188033488211938904
+--- !u!82 &-2311320072300120672
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -465,6 +448,10 @@ PrefabInstance:
       propertyPath: shooter
       value: 
       objectReference: {fileID: 6353869857872143724}
+    - target: {fileID: 1516876675771361792, guid: 46f3dfe132c8b9d4a81b354b7999fed9, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 1935069973170905315, guid: 2085fd502d4331f4aaa1c5725b227ce2, type: 3}
     - target: {fileID: 1516876675771361793, guid: 46f3dfe132c8b9d4a81b354b7999fed9, type: 3}
       propertyPath: m_SortingLayer
       value: 1

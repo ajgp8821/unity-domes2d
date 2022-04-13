@@ -33,12 +33,12 @@ public class BulletController : MonoBehaviour {
         transform.Translate(movement);
 
         // Change bullet's colot over time
-        Debug.Log("_startingTime " + _startingTime);
+        // Debug.Log("_startingTime " + _startingTime);
         float _timeSinceStarted = Time.time - _startingTime;
-        Debug.Log("_timeSinceStarted " + _timeSinceStarted);
+        // Debug.Log("_timeSinceStarted " + _timeSinceStarted);
         float _percentageCompleted = _timeSinceStarted / livingTime;
-        Debug.Log("_percentageCompleted " + _percentageCompleted);
-        Debug.Log("livingTime " + livingTime);
+        // Debug.Log("_percentageCompleted " + _percentageCompleted);
+        // Debug.Log("livingTime " + livingTime);
 
         _renderer.color = Color.Lerp(initialColor, finalColor, _percentageCompleted);
     }

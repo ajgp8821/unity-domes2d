@@ -32,7 +32,7 @@ public class WeaponController : MonoBehaviour {
         if (bulletPrefab != null && _firePoint != null && shooter != null) {
             GameObject myBullet = Instantiate(bulletPrefab, _firePoint.transform.position, Quaternion.identity) as GameObject;
 
-            BulletController bulletController = myBullet.GetComponent<BulletController>();
+            BulletControllerV2 bulletController = myBullet.GetComponent<BulletControllerV2>();
 
             if (shooter.transform.localScale.x < 0f) {
                 // Left
